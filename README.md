@@ -20,8 +20,8 @@ Humans and AI agents read these files before changing code in `balaji-api` or `b
 | Repo | Contains | Deploys to |
 | --- | --- | --- |
 | `balaji-docs` | This documentation | Not deployed |
-| `balaji-api` | Node.js + Express REST API | Render or Railway |
-| `balaji-web` | React app: public site + admin panel at `/admin` | Vercel or Netlify |
+| `balaji-api` | REST API: Cloudflare Worker + Hono + D1 | Cloudflare (`balaji-api`) |
+| `balaji-web` | React app: public site + admin panel at `/admin`; forwards `/api` to `balaji-api` | Cloudflare (`balaji-web`) |
 
 ## Rules
 
