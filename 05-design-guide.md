@@ -1,42 +1,35 @@
 # Design guide
 
-**Minimal, fresh and clean: lots of white space, big real photos, one accent colour, nothing extra.**
+**Modern, premium, trustworthy construction design: charcoal and construction orange, architectural blueprint grid, real project photos, generous spacing.**
 
-## Tokens (placeholder until the logo arrives)
+## Palette
 
 | Token | Value | Use |
 | --- | --- | --- |
-| `--bg` | `#ffffff` | Page background |
-| `--bg-soft` | `#f7f6f3` | Alternate sections, cards |
-| `--ink` | `#16181d` | Main text |
-| `--ink-soft` | `#5b616e` | Secondary text |
-| `--line` | `#e6e4df` | Borders, dividers |
-| `--accent` | `#1f6f5c` | Buttons, links, active states (swap for logo colour) |
-| `--accent-ink` | `#ffffff` | Text on accent |
-| Radius | `12px` cards, `999px` pills | |
-| Font | Inter (fallback system sans-serif) | One family only |
-| Body size | 16px mobile, 17px desktop | |
-| Spacing | 4px base; sections 64px mobile / 112px desktop | |
+| Charcoal | `#202923` | Text; dark sections with a blueprint grid |
+| Construction orange | `#DF6A35` | Accents, large display text, text on charcoal (4.5:1) |
+| Orange (ink) | `#B4501F` | Buttons and small text on light backgrounds (5.1:1) |
+| Warm off-white | `#F7F5F0` | Page background |
+| Muted sage | `#E8EDE5` | Alternate sections, image placeholders |
+| Muted text | `#5F665E` | Secondary text (5.4:1 on off-white) |
 
-## Rules
+`#DF6A35` is only 3.4:1 on white, so it is never used for small text or button labels on light backgrounds.
 
-- Mobile-first. Test at 375px and 1280px.
-- Headings in sentence case. No all-caps headings.
-- Thin borders instead of heavy shadows.
-- Photos: full-width hero, 4:3 cards, lazy-loaded, Cloudinary `f_auto,q_auto`.
-- Avoid: emoji, auto-playing carousels, stock photos, a second accent colour.
+## Type
+
+Inter (Latin) and Noto Sans Devanagari (Hindi), self-hosted. Body 16px mobile / 17px desktop. No letter-spacing on Hindi text.
 
 ## Home page order
 
-1. Hero: photo, one line, "Get a free consultation"
-2. Stats strip
+1. Hero: company name as H1, one line, enquiry + projects buttons, featured real project photo
+2. Numbers strip (only if the owner enters them)
 3. Featured projects
-4. Services
-5. How we work (4 steps)
-6. Testimonials
-7. Enquiry form
-8. Footer: contact, quick links, socials
+4. Services (owner's ticked list, or categories of published projects)
+5. How a project works (4 neutral steps, no guarantees)
+6. Reviews (only real ones from the admin panel)
+7. FAQ
+8. Enquiry call to action, footer
 
-## Admin
+## Content rule
 
-Same tokens. Left sidebar on desktop, bottom tabs on mobile. Plain forms, drag to reorder photos, a clear Publish switch.
+No invented contact details, statistics, reviews, awards or guarantees. Anything about the business comes from the admin panel; empty means hidden.
